@@ -22,7 +22,7 @@ document.body.insertAdjacentHTML("afterbegin",
 `<header class="top"><a class="brand" href="index.html">${CFG.brand}<small>${CFG.sub}</small></a><button id="mb" aria-label="Open menu">☰</button></header>
 <div id="ov"></div><aside id="dr"><button id="cl" aria-label="Close menu">✕</button><nav>${PAGES.map(p=>link(p)).join("")}<a href="${CFG.insta}" target="_blank" rel="noopener"><span>📸</span>Instagram</a></nav></aside>`);
 document.body.insertAdjacentHTML("beforeend",
-`<footer><b>${CFG.brand}</b><br>${CFG.sub}<br>${CFG.address}<br>© ${new Date().getFullYear()} ${CFG.brand}</footer>
+`<footer><b>${CFG.brand}</b><br>${CFG.sub}<br>${CFG.address}<br>© ${new Date().getFullYear()} ${CFG.brand}<br><a class="pw" href="https://fantovexhq.github.io/" target="_blank" rel="noopener">Powered by <b>Fantovex</b></a></footer>
 <nav class="bot">${PAGES.map(p=>link(p,1)).join("")}<a href="${CFG.insta}" target="_blank" rel="noopener"><span>📸</span>Insta</a></nav>
 <a class="wa" href="${wa("Hi! I want to order momos.")}" target="_blank" rel="noopener" aria-label="WhatsApp">${WA_SVG}</a>`);
 const tg=o=>document.body.classList.toggle("open",o);
